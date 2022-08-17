@@ -327,11 +327,11 @@ img {
     background: rgba(47, 48, 58, 0.8);
 }
 
-.subject {
-    background: #F5F4FA;
+.team {
+    background-color: #F5F4FA;
 }
 
-.subject-main {
+.team-main {
     margin-right: auto;
     margin-bottom: 50px;
     margin-left: auto;
@@ -343,23 +343,23 @@ img {
     color: var(--first-text-color);
 }
 
-.subject-list {
+.team-list {
     display: flex;
     gap: 30px;
 }
 
-.subject-item {
+.team-item {
     background: var(--first-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.subject-content {
+.team-content {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.subject-title {
+.team-title {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -369,7 +369,7 @@ img {
     color: var(--first-text-color);
 }
 
-.subject-text {
+.team-text {
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
@@ -378,13 +378,13 @@ img {
     color: var(--second-text-color);
 }
 
-.subject-soc-list {
+.team-soc-list {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.subject-soc-link {
+.team-soc-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,13 +396,13 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subject-soc-link:hover,
-.subject-soc-link:focus {
+.team-soc-link:hover,
+.team-soc-link:focus {
     color: var(--first-color);
     background-color: var(--accent-color);
 }
 
-.subject-soc-icon {
+.team-soc-icon {
     fill: currentColor;
 }
 
@@ -772,7 +772,6 @@ img {
 }
 
 .check-text {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -800,13 +799,18 @@ img {
     fill: transparent;
 }
 
-.modal-checkbox:checked + .check-text span {
+.modal-check:checked + .check-text span {
     border: none;
     background-color: var(--accent-color);
 }
 
-.modal-checkbox:checked + .check-text .check-icon {
+.modal-check:checked + .check-text .check-icon {
     fill: var(--first-color);
+}
+
+.modal-check:focus + .check-text span {
+    cursor: pointer;
+    border-color: var(--accent-color);
 }
 
 .button-modal {
